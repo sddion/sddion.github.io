@@ -1,6 +1,6 @@
-<h1 align="center" style= color:lightblue>Portfolio</h1>
+<h1 align="center">Portfolio</h1>
 
-<h4 style= color:yellow; align="center" > If you've ever enjoyed a project of mine or simply want to share a coffee, that'd be awesome! 
+<h4 align="center" > If you've ever enjoyed a project of mine or simply want to share a coffee, that'd be awesome! 
 
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/d10xi24)
 
