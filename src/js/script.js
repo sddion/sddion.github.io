@@ -25,11 +25,4 @@ $(document).ready(function() {
         );
     });
 
-    // Handle click event for contact icons
-    $('.contact-icon').click(function(event) {
-        event.preventDefault(); 
-    
-        var link = $(this).attr('href');
-        window.open(link, '_blank');
-    });
 });
