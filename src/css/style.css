@@ -59,7 +59,7 @@ body {
 	transition: color 0.3s;
 }
 .nav-links li a:hover {
-	color: #93f87a;
+	color: #77ff55;
 }
 @media screen and (max-width: 850px) {
 	.navbar-container {
@@ -297,9 +297,10 @@ main {
 	font-weight: 400;
 	text-shadow: #2d2e2c 0.1875rem 0.125rem;
 }
+
 .skills-icons {
 	display: grid;
-	color: rgb(132, 192, 43);
+	color: rgba(132, 192, 43, 0.897);
 	grid-template: 1fr / repeat(6, 1fr);
 	justify-content: space-around;
 	justify-items: center;
