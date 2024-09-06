@@ -555,6 +555,10 @@ i.skill.html:hover {
 }
 .social-media-list li a {
 	color: #fff;
+ z-index: 1 ;
+}
+.social-media-list li i {
+  pointer-events: none;
 }
 .social-media-list li {
 	position: relative;
