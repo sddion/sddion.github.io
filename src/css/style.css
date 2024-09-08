@@ -546,49 +546,6 @@ i.skill.html:hover {
 	}
 }
 
-.cv-section {
-  margin: 5% 10%;
-  text-align: center;
-}
-
-.cv-section h2 {
-  font-family: 'Comics Sans', sans-serif;
-  font-size: 4rem;
-  margin-bottom: 20px;
-  text-shadow: #2d2e2c 0.1875rem 0.125rem;
-  color: var(--secondary);
-}
-
-.cv-video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.download-btn-container {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-}
-
-.download-btn {
-  text-align: center;
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #000000;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.download-btn:hover {
-  background-color: #000000;
-  color: #ffffff;
-  transition: all 0.3s ease-in-out;
-}
 .social-media-list {
 	position: relative;
 	font-size: 22px;
