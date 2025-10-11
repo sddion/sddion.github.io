@@ -1,18 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; url=https://sddion.vercel.app/">
-    <link rel="canonical" href="https://sddion.vercel.app/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Redirecting to sddion.vercel.app...</title>
+
+    <!-- SEO + Redirect -->
+    <meta http-equiv="refresh" content="2; url=https://sddion.vercel.app/" />
+    <link rel="canonical" href="https://sddion.vercel.app/" />
+
+    <!-- Meta info -->
+    <meta name="description" content="This portfolio has permanently moved to https://sddion.vercel.app/." />
+    <meta property="og:title" content="Sanju's Portfolio" />
+    <meta property="og:description" content="This site has moved permanently to https://sddion.vercel.app/" />
+    <meta property="og:url" content="https://sddion.vercel.app/" />
+    <meta property="og:image" content="https://imgur.com/wmFiwFo.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #0d0d0d;
+        color: #f2f2f2;
+        font-family: "Anonymous Pro", monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: #00ffee;
+      }
+
+      p {
+        font-size: 1.1rem;
+        max-width: 500px;
+        line-height: 1.6;
+        margin-top: 0.5rem;
+        color: #ccc;
+      }
+
+      a {
+        color: #00ffee;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .redirect-box {
+        border: 1px solid #00ffee33;
+        border-radius: 16px;
+        padding: 2rem;
+        background: linear-gradient(145deg, #111, #090909);
+        box-shadow: 0 0 25px #00ffee22;
+        animation: pulse 2.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 10px #00ffee22;
+        }
+        50% {
+          box-shadow: 0 0 20px #00ffee55;
+        }
+        100% {
+          box-shadow: 0 0 10px #00ffee22;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .spinner {
+        margin-top: 1.5rem;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #00ffee33;
+        border-top-color: #00ffee;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
+
   <body>
-    <p>
-      This page has moved permanently to
-      <a href="https://sddion.vercel.app/">https://sddion.vercel.app/</a>.
-    </p>
+    <div class="redirect-box">
+      <h1>🚀 Redirecting to My New Portfolio</h1>
+      <p>
+        This site has permanently moved to
+        <a href="https://sddion.vercel.app/">https://sddion.vercel.app/</a>.
+        You’ll be redirected automatically in a moment.
+      </p>
+      <div class="spinner"></div>
+    </div>
+
     <script>
-      window.location.replace("https://sddion.vercel.app/");
+      // Fallback redirect for instant JS-based transition
+      setTimeout(() => {
+        window.location.replace("https://sddion.vercel.app/");
+      }, 1500);
     </script>
   </body>
 </html>
