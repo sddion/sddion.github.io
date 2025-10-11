@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Redirecting to sddion.vercel.app...</title>
+    <title>Transferring Portfolio…</title>
 
     <!-- SEO + Redirect -->
-    <meta http-equiv="refresh" content="2; url=https://sddion.vercel.app/" />
+    <meta http-equiv="refresh" content="3; url=https://sddion.vercel.app/" />
     <link rel="canonical" href="https://sddion.vercel.app/" />
-
-    <!-- Meta info -->
-    <meta name="description" content="This portfolio has permanently moved to https://sddion.vercel.app/." />
-    <meta property="og:title" content="Sanju's Portfolio" />
-    <meta property="og:description" content="This site has moved permanently to https://sddion.vercel.app/" />
-    <meta property="og:url" content="https://sddion.vercel.app/" />
-    <meta property="og:image" content="https://imgur.com/wmFiwFo.png" />
-    <meta property="og:type" content="website" />
 
     <!-- Fonts -->
     <link
@@ -30,105 +22,110 @@
         color: #f2f2f2;
         font-family: "Anonymous Pro", monospace;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         margin: 0;
         text-align: center;
-        animation: fadeIn 1.5s ease-in-out;
       }
 
       h1 {
         font-size: 2rem;
-        letter-spacing: 1px;
         color: #00ffee;
+        margin-bottom: 1rem;
       }
 
       p {
         font-size: 1.1rem;
-        max-width: 500px;
-        line-height: 1.6;
-        margin-top: 0.5rem;
         color: #ccc;
+        margin-bottom: 2rem;
       }
 
-      a {
+      .transfer-container {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        position: relative;
+      }
+
+      .server {
+        width: 80px;
+        height: 80px;
+        background: #111;
+        border: 2px solid #00ffee;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
         color: #00ffee;
-        text-decoration: none;
-        font-weight: bold;
+        position: relative;
       }
 
-      a:hover {
-        text-decoration: underline;
+      .data-dot {
+        width: 12px;
+        height: 12px;
+        background: #00ffee;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        animation: moveData 3s linear infinite;
+      }
+
+      @keyframes moveData {
+        0% { left: 0; opacity: 0; }
+        25% { opacity: 1; }
+        50% { left: 50%; opacity: 1; }
+        75% { opacity: 75%; }
+        100% { left: 100%; opacity: 0; }
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 4px;
+        background: #00ffee55;
+        transform: translate(-50%, -50%);
+        animation: pulseArrow 1.5s infinite;
+      }
+
+      @keyframes pulseArrow {
+        0%, 100% { background-color: #00ffee55; }
+        50% { background-color: #00ffee; }
       }
 
       .redirect-box {
-        border: 1px solid #00ffee33;
-        border-radius: 16px;
-        padding: 2rem;
-        background: linear-gradient(145deg, #111, #090909);
-        box-shadow: 0 0 25px #00ffee22;
-        animation: pulse 2.5s infinite;
-      }
-
-      @keyframes pulse {
-        0% {
-          box-shadow: 0 0 10px #00ffee22;
-        }
-        50% {
-          box-shadow: 0 0 20px #00ffee55;
-        }
-        100% {
-          box-shadow: 0 0 10px #00ffee22;
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .spinner {
-        margin-top: 1.5rem;
-        width: 40px;
-        height: 40px;
-        border: 4px solid #00ffee33;
-        border-top-color: #00ffee;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
   </head>
 
   <body>
     <div class="redirect-box">
-      <h1>🚀 Redirecting to My New Portfolio</h1>
-      <p>
-        This site has permanently moved to
-        <a href="https://sddion.vercel.app/">https://sddion.vercel.app/</a>.
-        You’ll be redirected automatically in a moment.
-      </p>
-      <div class="spinner"></div>
+      <h1>📡 Transferring Portfolio…</h1>
+      <p>Moving data from the old server to <strong>Vercel</strong></p>
+
+      <div class="transfer-container">
+        <div class="server">🖥️</div>
+        <div class="arrow"></div>
+        <div class="server">☁️</div>
+        <div class="data-dot"></div>
+      </div>
+
+      <p>If you are not redirected automatically, <a href="https://sddion.vercel.app/">click here</a>.</p>
     </div>
 
     <script>
-      // Fallback redirect for instant JS-based transition
+      // JS fallback redirect
       setTimeout(() => {
         window.location.replace("https://sddion.vercel.app/");
-      }, 1500);
+      }, 3000);
     </script>
   </body>
 </html>
